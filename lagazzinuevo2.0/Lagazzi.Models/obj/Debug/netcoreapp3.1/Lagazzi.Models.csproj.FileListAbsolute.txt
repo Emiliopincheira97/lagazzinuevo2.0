@@ -1,0 +1,5 @@
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.Models\bin\Debug\netcoreapp3.1\Lagazzi.Models.deps.json
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.Models\bin\Debug\netcoreapp3.1\Lagazzi.Models.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.Models\obj\Debug\netcoreapp3.1\Lagazzi.Models.csprojAssemblyReference.cache
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.Models\obj\Debug\netcoreapp3.1\Lagazzi.Models.AssemblyInfoInputs.cache
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.Models\obj\Debug\netcoreapp3.1\Lagazzi.Models.AssemblyInfo.cs

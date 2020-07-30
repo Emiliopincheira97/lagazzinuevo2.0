@@ -1,0 +1,5 @@
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\bin\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.deps.json
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\bin\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.csprojAssemblyReference.cache
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.AssemblyInfo.cs
