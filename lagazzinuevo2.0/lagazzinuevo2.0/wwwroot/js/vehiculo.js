@@ -18,11 +18,11 @@ function cargarDataTable() {
         },
         "columns": [
             { "data": "id", "width": "5%" },
-            { "data": "marca", "width": "20%" },
-            { "data": "modelo", "width": "20%" },
+            { "data": "marca", "width": "10%" },
+            { "data": "modelo", "width": "10%" },
             { "data": "patente", "width": "10%" },
             { "data": "anio", "width": "10%" },
-            { "data": "tipo.nombre", "width": "15%" },
+            { "data": "tipoVehiculo.nombre", "width": "15%" },
             {
                 "data": "id",
                 "render": function (data) {

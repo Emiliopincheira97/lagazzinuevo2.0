@@ -31,7 +31,8 @@ namespace Lagazzi.Models
         public int Anio { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Tipo de vehiculo no seleccionado")]
+        [Display(Name ="Tipo de Vehiculo")]
         public int TipoVehiculoId  { get; set; }
 
         [ForeignKey("TipoVehiculoId")]

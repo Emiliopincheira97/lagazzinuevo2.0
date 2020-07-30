@@ -6,6 +6,7 @@ using Lagazzi.AccesoDatos.Data.Repository;
 using Lagazzi.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace lagazzinuevo2._0.Areas.Admin.Controllers
 {
@@ -36,6 +37,26 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
                 ListaTipoVehiculo = _contenedorTrabajo.TipoVehiculo.GetListaTipoVehiculo()
             };
             return View(vehiculovm);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult CreateVehiculo(VehiculoVM vehiculovm)
+        {
+            if (ModelState.IsValid)
+            {
+                if (vehiculovm.Vehiculo.Id == 0)
+                {
+
+                    _contenedorTrabajo.Vehiculo.Add(vehiculovm.Vehiculo);
+                    _contenedorTrabajo.Save();
+
+                    return RedirectToAction(nameof(Index));
+
+                }
+            }
+            return View();
+
         }
 
 
