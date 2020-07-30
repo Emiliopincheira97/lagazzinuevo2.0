@@ -1,4 +1,5 @@
 ﻿using Lagazzi.AccesoDatos.Data.Repository;
+using Lagazzi.Models;
 using lagazzinuevo2._0.AccesoDatos.Data;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,10 @@ namespace Lagazzi.AccesoDatos.Data
         {
             _db = db;
             TipoVehiculo = new TipoVehiculoRepository(_db);
+            Vehiculo = new VehiculoRepository(_db);
         }
         public ITipoVehiculoRepository TipoVehiculo { get; private set; }
+        public IVehiculoRepository Vehiculo { get; private set; }
 
         public void Dispose()
         {
