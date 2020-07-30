@@ -8,7 +8,7 @@ namespace Lagazzi.AccesoDatos.Data.Repository
 {
     public interface IVehiculoRepository : IRepository<Vehiculo>
     {
-        IEnumerable<SelectListItem> GetVehiculo();
+      
 
 
 

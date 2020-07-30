@@ -20,14 +20,6 @@ namespace Lagazzi.AccesoDatos.Data
         }
 
 
-        public IEnumerable<SelectListItem> GetVehiculo()
-        {
-            return _db.Vehiculo.Select(i => new SelectListItem()
-            {
-                Text = i.Marca,
-                Value = i.Id.ToString()
-            });
-        }
 
         public void Update(Vehiculo vehiculo)
         {

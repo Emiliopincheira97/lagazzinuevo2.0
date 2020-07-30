@@ -108,17 +108,17 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
         }
 
         [HttpDelete]
-        public IActionResult BorrarTipoVehiculo(int id)
+        public IActionResult BorrarVehiculo(int id)
         {
 
-            var objFromDb = _contenedorTrabajo.TipoVehiculo.Get(id);
+            var objFromDb = _contenedorTrabajo.Vehiculo.Get(id);
             if (objFromDb == null)
             {
-                return Json(new { success = false, message = "Error borrando tipo vehiculo" });
+                return Json(new { success = false, message = "Error borrando vehiculo" });
 
             }
 
-            _contenedorTrabajo.TipoVehiculo.Remove(objFromDb);
+            _contenedorTrabajo.Vehiculo.Remove(objFromDb);
             _contenedorTrabajo.Save();
             return Json(new { success = true, message = "Borrado Correctamente" });
 
