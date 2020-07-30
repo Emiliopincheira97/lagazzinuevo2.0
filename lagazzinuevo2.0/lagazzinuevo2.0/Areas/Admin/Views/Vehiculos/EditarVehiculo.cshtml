@@ -1,74 +1,60 @@
-﻿@model Lagazzi.Models.ViewModels.VehiculoVM
+﻿
+@model Lagazzi.Models.ViewModels.VehiculoVM
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<br />
-<br />
-
-<h3 class="text-center"> Editar Vehículo</h3>
-<form method="post" asp-action="EditarVehiculo">
-    <input type="hidden" asp-for="Vehiculo.Id" />
-     <div class="row px-2 mx-2 border">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="col-10 offset-1 mt-4">
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="Vehiculo.Marca"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="Vehiculo.Marca" class="form-control" />
-                    <span asp-validation-for="Vehiculo.Marca" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="Vehiculo.Modelo"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="Vehiculo.Modelo" class="form-control" />
-                    <span asp-validation-for="Vehiculo.Modelo" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="Vehiculo.Patente"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="Vehiculo.Patente" class="form-control" />
-                    <span asp-validation-for="Vehiculo.Patente" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="Vehiculo.Anio"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="Vehiculo.Anio" class="form-control" />
-                    <span asp-validation-for="Vehiculo.Anio" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="Vehiculo.TipoVehiculoId"></label>
-                </div>
-                <div class="col-8">
-                    @Html.DropDownListFor(m => m.Vehiculo.TipoVehiculoId, Model.ListaTipoVehiculo,
-                   "-Seleccione tipo de vehículo-", new { @class = "form-control" })
-                </div>
-            </div>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link rel="stylesheet" href="~/css/crear_trabajador.css">
 
 
-            <div>
-                <div class="form-group row">
-                    < <div class="col">
-                        <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Vehiculo.Id">Actualizar</button>
-                    </div>
-                    <div class="col">
-                        <a asp-action="Index" class="btn btn-success form-control">Volver a Lista</a>
-                    </div>
-                </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 titulo"><h1>Editar Vehiculo</h1></div>
+    </div>
+    <div class="col-10"></div>
+    <form  method="post" asp-action="EditarVehiculo" class="col-12 form-register">
+        <input type="hidden" asp-for="Vehiculo.Id" />
+        <div class="form-group">
+            <label asp-for="Vehiculo.Marca"></label>
+            <input asp-for="Vehiculo.Marca" class="form-control" />
+            <span asp-validation-for="Vehiculo.Marca" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Vehiculo.Modelo"></label>
+            <input asp-for="Vehiculo.Modelo" class="form-control" />
+            <span asp-validation-for="Vehiculo.Modelo" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Vehiculo.Patente"></label>
+            <input asp-for="Vehiculo.Patente" class="form-control" />
+            <span asp-validation-for="Vehiculo.Patente" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Vehiculo.Anio"></label>
+            <input asp-for="Vehiculo.Anio" class="form-control" />
+            <span asp-validation-for="Vehiculo.Anio" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Vehiculo.TipoVehiculoId"></label>
+                @Html.DropDownListFor(m => m.Vehiculo.TipoVehiculoId, Model.ListaTipoVehiculo,
+              "-Seleccione tipo de vehículo-", new { @class = "form-control" })
             </div>
         </div>
-    </div>
-</form>
+
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-success form-control" asp-route-id="@Model.Vehiculo.Id">Actualizar</button>
+                &nbsp;
+            </div>
+            <div class="col-6">
+                <a asp-action="Index" class="btn btn-atras form-control">Volver a la lista</a>
+            </div>
+        </div>
+
+    </form>
+</div>

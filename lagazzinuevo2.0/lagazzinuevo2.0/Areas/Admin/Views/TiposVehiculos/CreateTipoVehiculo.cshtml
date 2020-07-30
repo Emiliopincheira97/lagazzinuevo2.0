@@ -1,31 +1,61 @@
-﻿@model Lagazzi.Models.TipoVehiculo
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@*@model Lagazzi.Models.TipoVehiculo
+    @{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
 
-<br />
-<br />
+    <br />
+    <br />
 
-<h3 class="text-center"> Crear un nuevo Tipo Vehículo</h3>
-<form method="post" asp-action="CreateTipoVehiculo">
-    <div class="row px-2 mx-2 border">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="col-10 offset-1 mt-4">
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="Nombre"></label>
+    <h3 class="text-center"> Crear un nuevo Tipo Vehículo</h3>
+    <form method="post" asp-action="CreateTipoVehiculo">
+        <div class="row px-2 mx-2 border">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-10 offset-1 mt-4">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Nombre"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Nombre" class="form-control" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
                 </div>
-                <div class="col-8">
-                    <input asp-for="Nombre" class="form-control" />
-                    <span asp-validation-for="Nombre" class="text-danger"></span>
-                </div>
-            </div>
 
-            <div class="form-group row">
-                <div class="col-8 offset-4">
-                    <partial name="_VistaCrearVolver" />
+                <div class="form-group row">
+                    <div class="col-8 offset-4">
+                        <partial name="_VistaCrearVolver" />
+                    </div>
                 </div>
             </div>
         </div>
+    </form>*@
+@model Lagazzi.Models.TipoVehiculo
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/registro_tipo.css">
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 titulo"><h1>Registros Tipo Vehículo</h1></div>
+            <div class="col-10"></div>
+            <form method="post" asp-action="CreateTipoVehiculo" class="col-12 form-register">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Nombre"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success form-control">Registrar</button>
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <a asp-action="Index" class="btn btn-warning form-control">Volver a Lista</a>
+                    </div>
+                    </div>
+            </form>
+        </div>
     </div>
-</form>
+</div>

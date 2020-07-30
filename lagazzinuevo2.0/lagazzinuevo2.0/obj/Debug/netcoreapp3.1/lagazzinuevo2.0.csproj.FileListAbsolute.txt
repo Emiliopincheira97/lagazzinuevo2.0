@@ -442,3 +442,4 @@ C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\laga
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Vehiculos\Index.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Vehiculos\CreateVehiculo.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Vehiculos\EditarVehiculo.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Vehiculos\prueba.cshtml.g.cs

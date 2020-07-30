@@ -59,6 +59,7 @@ function Delete(url) {
         showCancelButton: true,
         confirmButtonColor: "#DD6B55",
         confirmButtonText: "Si, borrar!",
+        cancelButtonText: "No, cancelar!",
         closeOnconfirm: true
 
     }, function () {

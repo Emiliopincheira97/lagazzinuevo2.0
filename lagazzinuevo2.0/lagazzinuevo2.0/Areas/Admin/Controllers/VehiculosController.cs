@@ -28,6 +28,23 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult prueba()
+        {
+
+            return View();
+        }
+
+        public IActionResult prueba2()
+        {
+            VehiculoVM vehiculovm = new VehiculoVM()
+            {
+                Vehiculo = new Lagazzi.Models.Vehiculo(),
+                ListaTipoVehiculo = _contenedorTrabajo.TipoVehiculo.GetListaTipoVehiculo()
+            };
+            return View(vehiculovm);
+        }
+
+
         [HttpGet]
         public IActionResult CreateVehiculo()
         {

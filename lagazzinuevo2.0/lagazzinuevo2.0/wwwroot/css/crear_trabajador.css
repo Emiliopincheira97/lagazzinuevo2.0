@@ -1,0 +1,37 @@
+body{
+    background-color: #e30614;
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+.container{
+    border: 1px solid black;
+    background: white;
+}
+
+.titulo{
+    text-align: center;
+    background: #fbb900;
+}
+.form-register{
+    align-items: initial;
+    padding: 20px 50px;
+} 
+label{
+    display: block;
+    font-size: 12pt;
+    font-family: Arial;
+}
+.btn-atras {
+    background: #fbb900;
+}
+
+.msg-error {
+    color: red;
+}
+.msg-save{
+    color: #0E8D49;
+}
