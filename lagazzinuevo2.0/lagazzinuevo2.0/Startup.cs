@@ -12,6 +12,8 @@ using lagazzinuevo2._0.AccesoDatos.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Lagazzi.AccesoDatos.Data.Repository;
+using Lagazzi.AccesoDatos.Data;
 
 namespace lagazzinuevo2._0
 {
@@ -32,6 +34,8 @@ namespace lagazzinuevo2._0
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped<IContenedorTrabajo, ContenedorTrabajo>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }

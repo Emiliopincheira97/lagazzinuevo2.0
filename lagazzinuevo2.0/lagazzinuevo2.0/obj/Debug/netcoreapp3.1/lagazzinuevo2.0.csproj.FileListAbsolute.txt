@@ -425,10 +425,6 @@ C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\laga
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.csproj.CoreCompileInputs.cache
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\Home\Index.cshtml.g.cs
-C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\Home\Privacy.cshtml.g.cs
-C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\_ViewImports.cshtml.g.cs
-C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\_ViewStart.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Privacy.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
@@ -439,3 +435,4 @@ C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\laga
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.pdb
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.Models.pdb
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.Utilidades.pdb
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\TiposVehiculos\Index.cshtml.g.cs
