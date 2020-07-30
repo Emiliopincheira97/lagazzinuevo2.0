@@ -59,8 +59,6 @@ C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\laga
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.TagHelpers.output.cache
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.RazorCoreGenerate.cache
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -427,3 +425,11 @@ C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\laga
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.csproj.CoreCompileInputs.cache
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\lagazzinuevo2.0.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\Home\Index.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\Home\Privacy.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\_ViewImports.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views - Copia\_ViewStart.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Privacy.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs

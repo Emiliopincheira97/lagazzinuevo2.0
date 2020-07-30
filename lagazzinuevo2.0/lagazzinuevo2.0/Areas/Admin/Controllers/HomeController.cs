@@ -9,6 +9,8 @@ using lagazzinuevo2._0.Models;
 
 namespace lagazzinuevo2._0.Controllers
 {
+
+    [Area("Admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
