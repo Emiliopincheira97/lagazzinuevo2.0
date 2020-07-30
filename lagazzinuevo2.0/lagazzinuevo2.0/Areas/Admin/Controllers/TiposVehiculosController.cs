@@ -46,6 +46,19 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
         }
 
 
+        [HttpGet]
+        public IActionResult EditarTipoVehiculo(int id)
+        {
+            TipoVehiculo tipoVehiculo = new TipoVehiculo();
+            tipoVehiculo = _contenedorTrabajo.TipoVehiculo.Get(id);
+            if (tipoVehiculo == null)
+            {
+                return NotFound();
+            }
+            return View(tipoVehiculo);
+        }
+
+
 
 
         #region LLAMADAS A LA API

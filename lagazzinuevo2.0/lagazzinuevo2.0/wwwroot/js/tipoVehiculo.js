@@ -24,11 +24,11 @@ function cargarDataTable() {
                 "render": function (data) {
                     return `
                                 <div class="text-center">
-                                <a href='/Admin/TiposVehiculos/Edit/${data}' class='btn btn-success text-white' style='cursor:pointer; width:100px;'>
+                                <a href='/Admin/TiposVehiculos/EditarTipoVehiculo/${data}' class='btn btn-success text-white' style='cursor:pointer; width:100px;'>
                                 <i class='fas fa-edit'></i> Editar
                                 </a>
                                 &nbsp;
-                                <a onclick=Delete("/Admin/TiposVehiculos/Delete/${data}")  class='btn btn-danger text-white' style='cursor:pointer; width:100px;'>
+                                <a onclick=Delete("/Admin/TiposVehiculos/EliminarTipoVehiculo/${data}")  class='btn btn-danger text-white' style='cursor:pointer; width:100px;'>
                                 <i class='fas fa-edit'></i> Borrar
                                 </a>
                         
