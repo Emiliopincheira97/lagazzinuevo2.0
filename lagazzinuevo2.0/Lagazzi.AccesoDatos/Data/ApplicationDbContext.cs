@@ -14,7 +14,7 @@ namespace lagazzinuevo2._0.AccesoDatos.Data
         {
 
         }
-
+        public DbSet<Vehiculo> Vehiculo{ get; set; }
         public DbSet<TipoVehiculo> TipoVehiculo { get; set; }
     }
 }
