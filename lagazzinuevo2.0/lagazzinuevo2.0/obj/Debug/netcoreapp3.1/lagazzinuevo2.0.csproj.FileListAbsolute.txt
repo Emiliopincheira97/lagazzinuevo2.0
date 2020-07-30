@@ -433,3 +433,9 @@ C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\laga
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Privacy.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.Models.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.Utilidades.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.pdb
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.Models.pdb
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\lagazzinuevo2.0\bin\Debug\netcoreapp3.1\Lagazzi.Utilidades.pdb

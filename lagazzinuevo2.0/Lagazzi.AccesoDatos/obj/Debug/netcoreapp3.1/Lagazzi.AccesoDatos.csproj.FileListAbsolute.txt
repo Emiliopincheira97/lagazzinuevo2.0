@@ -3,3 +3,12 @@ C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Laga
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.csprojAssemblyReference.cache
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.AssemblyInfoInputs.cache
 C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.AssemblyInfo.cs
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\bin\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.pdb
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\bin\Debug\netcoreapp3.1\Lagazzi.Models.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\bin\Debug\netcoreapp3.1\Lagazzi.Utilidades.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\bin\Debug\netcoreapp3.1\Lagazzi.Models.pdb
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\bin\Debug\netcoreapp3.1\Lagazzi.Utilidades.pdb
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.csproj.CopyComplete
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.dll
+C:\Users\programador\Desktop\Repositoriogit\lagazzinuevo2.0\lagazzinuevo2.0\Lagazzi.AccesoDatos\obj\Debug\netcoreapp3.1\Lagazzi.AccesoDatos.pdb
