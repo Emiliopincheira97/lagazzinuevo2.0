@@ -23,6 +23,13 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
        
         public IActionResult Index()
         {
+            
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult CreateVehiculo()
+        {
             VehiculoVM vehiculovm = new VehiculoVM()
             {
                 Vehiculo = new Lagazzi.Models.Vehiculo(),
@@ -30,6 +37,7 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
             };
             return View(vehiculovm);
         }
+
 
 
         #region LLAMADAS A LA API
