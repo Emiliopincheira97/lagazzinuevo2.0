@@ -58,6 +58,18 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
             return View(tipoVehiculo);
         }
 
+        [HttpPost]
+        public IActionResult EditarTipoVehiculo(TipoVehiculo tipoVehiculo)
+        {
+            if (ModelState.IsValid)
+            {
+                _contenedorTrabajo.TipoVehiculo.Update(tipoVehiculo);
+                _contenedorTrabajo.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(tipoVehiculo);
+        }
+
 
 
 
@@ -66,6 +78,22 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             return Json(new { data = _contenedorTrabajo.TipoVehiculo.GetAll()});
+
+        }
+
+        [HttpDelete]
+        public IActionResult BorrarTipoVehiculo(int id) {
+
+            var objFromDb = _contenedorTrabajo.TipoVehiculo.Get(id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error borrando tipo vehiculo" });
+
+            }
+
+            _contenedorTrabajo.TipoVehiculo.Remove(objFromDb);
+            _contenedorTrabajo.Save();
+            return Json(new { success = true, message = "Borrado Correctamente" });
 
         }
 

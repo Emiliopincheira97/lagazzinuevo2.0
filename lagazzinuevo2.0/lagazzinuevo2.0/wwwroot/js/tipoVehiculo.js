@@ -28,8 +28,8 @@ function cargarDataTable() {
                                 <i class='fas fa-edit'></i> Editar
                                 </a>
                                 &nbsp;
-                                <a onclick=Delete("/Admin/TiposVehiculos/EliminarTipoVehiculo/${data}")  class='btn btn-danger text-white' style='cursor:pointer; width:100px;'>
-                                <i class='fas fa-edit'></i> Borrar
+                                <a onclick=Delete("/Admin/TiposVehiculos/BorrarTipoVehiculo/${data}")  class='btn btn-danger text-white' style='cursor:pointer; width:100px;'>
+                                <i class='fas fa-trash-alt'></i> Borrar
                                 </a>
                         
                                     
