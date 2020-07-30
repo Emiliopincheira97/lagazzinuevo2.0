@@ -59,6 +59,44 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
 
         }
 
+        [HttpGet]
+        public IActionResult EditarVehiculo(int? id)
+        {
+            VehiculoVM vehiculovm = new VehiculoVM()
+            {
+                Vehiculo = new Lagazzi.Models.Vehiculo(),
+                ListaTipoVehiculo = _contenedorTrabajo.TipoVehiculo.GetListaTipoVehiculo()
+            };
+
+            if (id != null)
+            {
+                vehiculovm.Vehiculo = _contenedorTrabajo.Vehiculo.Get(id.GetValueOrDefault());
+            }
+
+            return View(vehiculovm);
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditarVehiculo(VehiculoVM vehiculovm)
+        {
+
+            var vehiculoDesdeDb = _contenedorTrabajo.Vehiculo.Get(vehiculovm.Vehiculo.Id);
+            if (ModelState.IsValid)
+            {
+               
+
+                    _contenedorTrabajo.Vehiculo.Update(vehiculovm.Vehiculo);
+                    _contenedorTrabajo.Save();
+
+                    return RedirectToAction(nameof(Index));
+
+                
+            }
+            return View();
+
+        }
 
 
         #region LLAMADAS A LA API
