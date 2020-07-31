@@ -1,0 +1,36 @@
+﻿@model Lagazzi.Models.TipoTrabajador
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/registro_tipo.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 titulo"><h1>Editar Tipo Trabajador</h1></div>
+            <div class="col-10"></div>
+            <form method="post" asp-action="EditarTipoTrabajador" class="col-12 form-register">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="Nombre"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success form-control" asp-route-id="@Model.Id">Actualizar</button>
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <a asp-controller="TiposTrabajadores" asp-action="Index" class="btn btn-warning form-control">Volver a Lista</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

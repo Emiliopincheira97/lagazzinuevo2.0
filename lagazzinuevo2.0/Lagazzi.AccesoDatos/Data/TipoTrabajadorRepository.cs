@@ -9,6 +9,7 @@ using System.Text;
 
 namespace Lagazzi.AccesoDatos.Data
 {
+   
     public class TipoTrabajadorRepository : Repository<TipoTrabajador>, ITipoTrabajadorRepository
     {
 
