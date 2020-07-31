@@ -8,6 +8,9 @@ namespace Lagazzi.AccesoDatos.Data.Repository
     {
         ITipoVehiculoRepository TipoVehiculo { get; }
         IVehiculoRepository Vehiculo { get; }
+        ITrabajadorRepository Trabajador { get; }
+        IEstadoRepository Estado { get; }
+        ITipoTrabajadorRepository TipoTrabajador { get; }
 
         void Save(); 
     }

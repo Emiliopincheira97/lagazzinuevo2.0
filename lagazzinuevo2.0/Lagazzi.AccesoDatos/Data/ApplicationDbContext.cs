@@ -14,7 +14,10 @@ namespace lagazzinuevo2._0.AccesoDatos.Data
         {
 
         }
+        public DbSet<Estado> Estado { get; set; }
+        public DbSet<TipoTrabajador> TipoTrabajador { get; set; }
         public DbSet<Vehiculo> Vehiculo{ get; set; }
         public DbSet<TipoVehiculo> TipoVehiculo { get; set; }
+        public DbSet<Trabajador> Trabajador { get; set; }
     }
 }

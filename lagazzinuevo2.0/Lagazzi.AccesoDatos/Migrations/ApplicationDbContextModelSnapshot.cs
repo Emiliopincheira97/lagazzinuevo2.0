@@ -19,6 +19,38 @@ namespace Lagazzi.AccesoDatos.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Lagazzi.Models.Estado", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Estado");
+                });
+
+            modelBuilder.Entity("Lagazzi.Models.TipoTrabajador", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TipoTrabajador");
+                });
+
             modelBuilder.Entity("Lagazzi.Models.TipoVehiculo", b =>
                 {
                     b.Property<int>("Id")
@@ -33,6 +65,44 @@ namespace Lagazzi.AccesoDatos.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TipoVehiculo");
+                });
+
+            modelBuilder.Entity("Lagazzi.Models.Trabajador", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Apellidos")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Correo")
+                        .IsRequired()
+                        .HasColumnType("varchar(80)");
+
+                    b.Property<int>("EstadoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombres")
+                        .IsRequired()
+                        .HasColumnType("varchar(45)");
+
+                    b.Property<string>("Run")
+                        .IsRequired()
+                        .HasColumnType("varchar(13)");
+
+                    b.Property<int>("TipoTrabajadorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EstadoId");
+
+                    b.HasIndex("TipoTrabajadorId");
+
+                    b.ToTable("Trabajador");
                 });
 
             modelBuilder.Entity("Lagazzi.Models.Vehiculo", b =>
@@ -264,6 +334,21 @@ namespace Lagazzi.AccesoDatos.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Lagazzi.Models.Trabajador", b =>
+                {
+                    b.HasOne("Lagazzi.Models.Estado", "Estado")
+                        .WithMany()
+                        .HasForeignKey("EstadoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Lagazzi.Models.TipoTrabajador", "TipoTrabajador")
+                        .WithMany()
+                        .HasForeignKey("TipoTrabajadorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Lagazzi.Models.Vehiculo", b =>

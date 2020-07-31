@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/registro-trabajadores.css">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 titulo"><h1>Registros Trabajadores</h1></div>
+        <div class="col-12  botones">
+            <a class="btn-crear" asp-action="CreateTrabajador"><i style="margin-right: 20px !important;" class="fas fa-plus-circle"></i>Registrar Trabajador</a>
+            <a class="btn-crear" asp-controller="TiposTrabajadores" asp-action="Index"><i style="margin-right: 20px !important;" class="fas fa-plus-circle"></i>Registrar Tipo Trabajador</a>
+            <a class="btn-crear" asp-controller="Home" asp-action="Index"><i style="margin-right: 20px !important;" class="fas fa-plus-circle"></i>Atrás</a>
+
+        </div>
+    </div>
+    <table id="tblTrabajador" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Run</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+                <th>Tipo</th>
+                <th>Estado</th>
+                <th colspan="1"></th>
+            </tr>
+        </thead>
+
+
+    </table>
+    @section Scripts{
+        <script src="~/js/trabajador.js"></script>
+    }
+</div>
