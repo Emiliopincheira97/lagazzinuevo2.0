@@ -11,6 +11,7 @@ namespace Lagazzi.AccesoDatos.Data.Repository
         ITrabajadorRepository Trabajador { get; }
         IEstadoRepository Estado { get; }
         ITipoTrabajadorRepository TipoTrabajador { get; }
+        IUsuarioRepository Usuario { get; }
 
         void Save(); 
     }

@@ -21,6 +21,7 @@ namespace Lagazzi.AccesoDatos.Data
             Trabajador = new TrabajadorRepository(_db);
             Estado = new EstadoRepository(_db);
             TipoTrabajador = new TipoTrabajadorRepository(_db);
+            Usuario = new UsuarioRepository(_db);
         }
         public ITipoVehiculoRepository TipoVehiculo { get; private set; }
         public IVehiculoRepository Vehiculo { get; private set; }
@@ -30,6 +31,8 @@ namespace Lagazzi.AccesoDatos.Data
         public ITrabajadorRepository Trabajador { get; private set; }
 
         public ITipoTrabajadorRepository TipoTrabajador { get; private set; }
+
+        public IUsuarioRepository Usuario { get; private set; }
 
         public void Dispose()
         {
