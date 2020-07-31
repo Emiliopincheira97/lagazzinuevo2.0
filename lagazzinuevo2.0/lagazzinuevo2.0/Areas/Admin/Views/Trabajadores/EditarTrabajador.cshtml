@@ -1,0 +1,69 @@
+﻿
+@model Lagazzi.Models.ViewModels.TrabajadorVM
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/crear_trabajador.css">
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 titulo"><h1>Editar Trabajador</h1></div>
+    </div>
+    <div class="col-10"></div>
+    <form method="post" asp-action="EditarTrabajador" class="col-12 form-register">
+        <input type="hidden" asp-for="Trabajador.Id" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Trabajador.Run"></label>
+            <input asp-for="Trabajador.Run" class="form-control" />
+            <span asp-validation-for="Trabajador.Run" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Trabajador.Nombres"></label>
+            <input asp-for="Trabajador.Nombres" class="form-control" />
+            <span asp-validation-for="Trabajador.Nombres" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Trabajador.Apellidos"></label>
+            <input asp-for="Trabajador.Apellidos" class="form-control" />
+            <span asp-validation-for="Trabajador.Apellidos" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Trabajador.Correo"></label>
+            <input asp-for="Trabajador.Correo" class="form-control" />
+            <span asp-validation-for="Trabajador.Correo" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Trabajador.TipoTrabajadorId"></label>
+                @Html.DropDownListFor(m => m.Trabajador.TipoTrabajadorId, Model.ListaTipoTrabajador,
+              "-Seleccione tipo de trabajador-", new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Trabajador.EstadoId"></label>
+                @Html.DropDownListFor(m => m.Trabajador.EstadoId, Model.ListaEstado,
+              "-Seleccione Estado-", new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-success form-control">Actualizar</button>
+                &nbsp;
+            </div>
+            <div class="col-6">
+                <a asp-action="Index" class="btn btn-atras form-control">Volver a la lista</a>
+            </div>
+        </div>
+
+    </form>
+</div>

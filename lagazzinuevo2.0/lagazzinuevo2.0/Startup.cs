@@ -37,6 +37,7 @@ namespace lagazzinuevo2._0
 
             services.AddScoped<IContenedorTrabajo, ContenedorTrabajo>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
             services.AddRazorPages();
         }
 

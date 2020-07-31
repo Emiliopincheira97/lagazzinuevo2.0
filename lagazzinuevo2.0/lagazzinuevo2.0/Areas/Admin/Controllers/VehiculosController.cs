@@ -34,15 +34,7 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult prueba2()
-        {
-            VehiculoVM vehiculovm = new VehiculoVM()
-            {
-                Vehiculo = new Lagazzi.Models.Vehiculo(),
-                ListaTipoVehiculo = _contenedorTrabajo.TipoVehiculo.GetListaTipoVehiculo()
-            };
-            return View(vehiculovm);
-        }
+
 
 
         [HttpGet]
@@ -103,7 +95,6 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                
-
                     _contenedorTrabajo.Vehiculo.Update(vehiculovm.Vehiculo);
                     _contenedorTrabajo.Save();
 

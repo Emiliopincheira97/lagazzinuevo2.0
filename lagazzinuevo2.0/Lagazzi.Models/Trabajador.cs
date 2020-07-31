@@ -26,8 +26,8 @@ namespace Lagazzi.Models
         [Display(Name = "Apellido")]
         public string Apellidos { get; set; }
 
+        [EmailAddress(ErrorMessage ="Ingrese correo valido")]
         [Column(TypeName = "varchar(80)")]
-        [Required(ErrorMessage = "Ingresa un correo para el trabajador")]
         [Display(Name = "Correo")]
         public string Correo { get; set; }
 

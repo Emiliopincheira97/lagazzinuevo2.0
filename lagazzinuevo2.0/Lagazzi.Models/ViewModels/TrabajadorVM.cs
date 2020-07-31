@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Lagazzi.Models.ViewModels
 {
-    class TrabajadorVM
+    public class TrabajadorVM
     {
 
-        public Vehiculo Vehiculo { get; set; }
+        public Trabajador Trabajador { get; set; }
 
 
-        public IEnumerable<SelectListItem> ListaTipoVehiculo { get; set; }
+        public IEnumerable<SelectListItem> ListaTipoTrabajador { get; set; }
         public IEnumerable<SelectListItem> ListaEstado { get; set; }
     }
 }

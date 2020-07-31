@@ -23,7 +23,7 @@ namespace Lagazzi.AccesoDatos.Data
 
         public IEnumerable<SelectListItem> GetListaTipoTrabajador()
         {
-            return _db.TipoVehiculo.Select(i => new SelectListItem()
+            return _db.TipoTrabajador.Select(i => new SelectListItem()
             {
                 Text = i.Nombre,
                 Value = i.Id.ToString()
