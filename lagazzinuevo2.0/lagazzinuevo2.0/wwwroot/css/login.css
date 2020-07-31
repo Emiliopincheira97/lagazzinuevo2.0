@@ -1,0 +1,15 @@
+
+body{
+    background: #FBB900;
+}
+
+.modal-content{
+    margin-top: 10px;
+    background-color: #E30614;
+    border: black solid;
+}
+
+.forgot.a{
+    color: wheat;
+}
+

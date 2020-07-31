@@ -30,6 +30,28 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
               
         }
 
-        
+        public IActionResult Bloquear(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            _contenedorTrabajo.Usuario.BloqueaUsuario(id);
+            return RedirectToAction(nameof(Index));
+
+        }
+
+        public IActionResult Desbloquear(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            _contenedorTrabajo.Usuario.DesbloqueaUsuario(id);
+            return RedirectToAction(nameof(Index));
+
+        }
+
+
     }
 }

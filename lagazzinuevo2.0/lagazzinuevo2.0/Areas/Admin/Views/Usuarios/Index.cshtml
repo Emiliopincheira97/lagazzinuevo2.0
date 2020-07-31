@@ -13,7 +13,7 @@
         <div class="col-12 titulo"><h1>Registros Usuarios</h1></div>
         <div class="col-12  botones">
             <a class="btn-crear" asp-area="Identity" asp-page="/Account/Register"><i style="margin-right: 20px !important;" class="fas fa-plus-circle"></i>Registrar Usuario</a>
-            <a class="btn-crear" asp-controller="Home" asp-action="Index"><i style="margin-right: 20px !important;" class="fas fa-plus-circle"></i>Atrás</a>
+            <a class="btn-crear" asp-controller="Home" asp-action="HomeRegistro"><i style="margin-right: 20px !important;" class="fas fa-plus-circle"></i>Atrás</a>
 
         </div>
     </div>
@@ -49,8 +49,8 @@
             }
             else
             {
-                <a class="btn btn-success text-white" asp-action="Desbloquear" style="width:50px;" asp-route-id="@item.Id">
-                    <i class="fas fa-lock-lock"></i>
+                <a class="btn btn-danger text-white" asp-action="Desbloquear" style="width:50px;" asp-route-id="@item.Id">
+                    <i class="fas fa-lock"></i>
                 </a>
             }
             </td>

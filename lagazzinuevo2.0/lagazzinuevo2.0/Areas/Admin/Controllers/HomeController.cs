@@ -24,6 +24,10 @@ namespace lagazzinuevo2._0.Controllers
         {
             return View();
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
 
         public IActionResult HomeRegistro()
         {

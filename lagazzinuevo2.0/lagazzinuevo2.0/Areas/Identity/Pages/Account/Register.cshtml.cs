@@ -21,7 +21,7 @@ namespace lagazzinuevo2._0.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly SignInManager<IdentityUser  > _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -88,12 +88,10 @@ namespace lagazzinuevo2._0.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { 
-                    UserName = Input.Nombre, 
+                    UserName = Input.Email, 
                     Email = Input.Email,
                     Run = Input.Run,
-                    Nombre = Input.Nombre,
                     Apellidos = Input.Apellidos,
-                    PhoneNumber = Input.PhoneNumber,
                     EmailConfirmed = true
                     
                 };
@@ -122,7 +120,8 @@ namespace lagazzinuevo2._0.Areas.Identity.Pages.Account
 
                     _logger.LogInformation("Usuario creado con éxito");
 
-                    
+
+                    await _signInManager.SignInAsync(user, isPersistent: false);
                     return LocalRedirect(returnUrl);
 
                     //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);

@@ -70,6 +70,7 @@ namespace lagazzinuevo2._0
 
             app.UseEndpoints(endpoints =>
             {
+               
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
