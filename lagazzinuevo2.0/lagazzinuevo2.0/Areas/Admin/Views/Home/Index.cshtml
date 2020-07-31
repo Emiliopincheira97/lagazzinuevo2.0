@@ -1,9 +1,61 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="barra-lateral col-12 col-sm-auto">
+            <div class="logo">
+                <img class="icono" style="width: auto;" src="~/img/lagazzi.png" alt="">
+            </div>
+            <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                <a asp-area="Admin" asp-controller="Usuarios" asp-action="homeUsuario"><i style="margin-right: 20px !important;" class="far fa-edit mr-2 "></i>Registro</a>
+                <a href="#"><i style="margin-right: 30px !important;" class="far fa-file-alt mr-4"></i>Reportes</a>
+                <a asp-area="Admin" asp-controller="Usuarios" asp-action="Index"><i style="margin-right: 30px !important;" class="far fa-file-alt mr-4"></i>Controles</a>
+                <a href="#"><i style="margin-right: 30px !important;" class="fa fa-user" aria-hidden="true"></i>Nombre de Usuario</a>
+            </nav>
+
+        </div>
+
+        <main class="main col">
+            <div class="row opciones justify-content-between">
+                <div class="registro col-lg-5">
+                    <a asp-area="Admin" asp-controller="Home" asp-action="HomeRegistro">REGISTRO</></a>
+                    <div class="w-100"></div>
+                    <i class="far fa-edit mr-2 "></i>
+
+                </div>
+                <div class="reportes col-lg-5">
+                    <a href="">REPORTE</a>
+                    <div class="w-100"></div>
+                    <i class="far fa-file-alt mr-4"></i>
+                </div>
+            </div>
+            <div class="row opciones2 justify-content-between">
+                <div class="controles col-lg-5">
+                    <a href="">CONTROLES</a>
+                    <div class="w-100"></div>
+                    <i class="far fa-file-alt mr-4"></i>
+                </div>
+                <div class="usuario col-lg-5">
+                    <a href="">PERFIL</a>
+                    <div class="w-100"></div>
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
 
 
-<div class="text-center">
-    <h1 class="display-4">Bienvenido curso netcore3.1</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        </main>
+
+
+
+    </div>
 </div>
+
+

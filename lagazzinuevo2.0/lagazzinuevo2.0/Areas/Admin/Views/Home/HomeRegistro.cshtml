@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/lib/fontawesome/css/brands.css">
+<link rel="stylesheet" href="~/lib/fontawesome/css/solid.css">
+<link rel="stylesheet" href="~/css/registro.css" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="trabajadores col-5">
+            <a asp-area="Admin" asp-controller="Trabajadores" asp-action="homeTrabajadores">Trabajadores</a>
+            <div class="w-100"></div>
+            <i class="fas fa-user-tie"></i>
+        </div>
+        <div class="usuarios col-5">
+            <a asp-area="Admin" asp-controller="Usuarios" asp-action="homeUsuario">Usuarios</a>
+            <div class="w-100"></div>
+            <i class="fas fa-user-plus"></i>
+        </div>
+    </div>
+    <div class="row segunda justify-content-between">
+        <div class="vehiculos col-5">
+            <a asp-area="Admin" asp-controller="Vehiculos" asp-action="Index">Vehículos</a>
+            <div class="w-100"></div>
+            <i class="fas fa-tractor"></i>
+        </div>
+        <div class="atras col-5">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index">Atrás</a>
+            <div class="w-100"></div>
+            <i class="fas fa-arrow-left"></i>
+        </div>
+    </div>
+</div>

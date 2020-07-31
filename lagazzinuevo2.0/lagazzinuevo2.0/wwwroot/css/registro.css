@@ -1,0 +1,50 @@
+body {
+    background: #e30614;
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    padding: 20px;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.trabajadores{
+    background: white;
+    height: 200px;
+    text-align: center;
+    border-radius: 2%;
+    background: #00923E;;
+}
+
+.usuarios{
+    background: white;
+    height: 200px;
+    text-align: center;
+    border-radius: 2%;
+    background: #3383ff;;
+    
+}
+.vehiculos{
+    background: white;
+    height: 200px;
+    text-align: center;
+    border-radius: 2%;
+    background: #ff8a33;
+}
+.atras{
+    background: white;
+    height: 200px;
+    text-align: center;
+    border-radius: 2%;
+    background: #fbb900;
+}
+
+
+.segunda{
+    margin-top: 20px;
+}

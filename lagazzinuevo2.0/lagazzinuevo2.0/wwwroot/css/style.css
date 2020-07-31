@@ -1,0 +1,96 @@
+body{
+    background: white;
+}
+
+.barra-lateral{
+    background: #e30614;
+    color: white;
+    min-width: 300px;
+    min-height: 100vh;
+    padding: 0 !important;
+}
+
+.barra-lateral a{
+    color: white;
+}
+
+.barra-lateral .menu a{
+    display: block;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.1);  
+}
+.barra-lateral .menu a:hover{
+
+    text-decoration: none;
+    background: #fbb900;
+}
+img{
+    width: 100% !important;
+}
+
+
+.navbar-horizontal{
+    background: #fbb900;
+    height: 10%;
+}
+
+.navbar-horizontal li a{
+    color: white;
+    text-align: end;
+} 
+
+.navbar-horizontal li a:hover{
+    text-decoration: none;
+    color: white;
+}   
+
+main{
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+}
+main a{
+    color: black;
+}
+main a:hover{
+    text-decoration: none;
+    color: gray;
+   
+}
+
+main .opciones{
+    padding: 20px;
+}
+main .opciones2{
+    padding: 20px;
+}
+
+main .row .registro{
+    background: #3383ff;
+    height: 200px;
+    text-align: center;
+    border-radius: 2%;
+}
+main .row .reportes{
+    height: 200px;
+    text-align: center;
+    background: #00923E;
+    border-radius: 2%;
+}
+main .row .controles{
+    height: 200px;
+    text-align: center;
+    background: #ff8a33;
+    border-radius: 2%;
+}
+main .row .usuario{
+    height: 200px;
+    text-align: center;
+    background: #FBB900;
+    border-radius: 2%;
+}
+
+li{
+    text-decoration: none;
+}
