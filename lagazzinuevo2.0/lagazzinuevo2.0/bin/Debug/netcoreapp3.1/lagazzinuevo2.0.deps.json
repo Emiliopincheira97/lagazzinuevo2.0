@@ -2667,6 +2667,9 @@
         }
       },
       "Lagazzi.Utilidades/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "3.1.5"
+        },
         "runtime": {
           "Lagazzi.Utilidades.dll": {}
         },

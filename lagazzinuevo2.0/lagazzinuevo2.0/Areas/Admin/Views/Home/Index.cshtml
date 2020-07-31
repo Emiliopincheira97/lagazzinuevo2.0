@@ -15,10 +15,11 @@
                 <img class="icono" style="width: auto;" src="~/img/lagazzi.png" alt="">
             </div>
             <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                <a href="#"><i style="margin-right: 30px !important;" class="fa fa-user" aria-hidden="true"></i>Hola @User.Identity.Name</a>
                 <a asp-area="Admin" asp-controller="Usuarios" asp-action="homeUsuario"><i style="margin-right: 20px !important;" class="far fa-edit mr-2 "></i>Registro</a>
                 <a href="#"><i style="margin-right: 30px !important;" class="far fa-file-alt mr-4"></i>Reportes</a>
                 <a asp-area="Admin" asp-controller="Usuarios" asp-action="Index"><i style="margin-right: 30px !important;" class="far fa-file-alt mr-4"></i>Controles</a>
-                <a href="#"><i style="margin-right: 30px !important;" class="fa fa-user" aria-hidden="true"></i>Nombre de Usuario</a>
+
             </nav>
 
         </div>

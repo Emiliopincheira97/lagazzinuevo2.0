@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Lagazzi.AccesoDatos.Data.Repository;
 using Lagazzi.AccesoDatos.Data;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Lagazzi.Utilidades;
 
 namespace lagazzinuevo2._0
 {
@@ -32,8 +34,11 @@ namespace lagazzinuevo2._0
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.AddSingleton<IEmailSender,EmailSender > ();
 
             services.AddScoped<IContenedorTrabajo, ContenedorTrabajo>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();

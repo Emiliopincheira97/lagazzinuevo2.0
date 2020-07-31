@@ -3367,12 +3367,18 @@
       "Lagazzi.Utilidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "3.1.5"
+        },
         "compile": {
           "bin/placeholder/Lagazzi.Utilidades.dll": {}
         },
         "runtime": {
           "bin/placeholder/Lagazzi.Utilidades.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
