@@ -1,38 +1,15 @@
-﻿@*@model Lagazzi.Models.TipoVehiculo
-    @{
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }
-
-    <br />
-    <br />
-
-    <h3 class="text-center"> Crear un nuevo Tipo Vehículo</h3>
-    <form method="post" asp-action="CreateTipoVehiculo">
-        <div class="row px-2 mx-2 border">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="col-10 offset-1 mt-4">
-                <div class="form-group row">
-                    <div class="col-4">
-                        <label asp-for="Nombre"></label>
-                    </div>
-                    <div class="col-8">
-                        <input asp-for="Nombre" class="form-control" />
-                        <span asp-validation-for="Nombre" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-8 offset-4">
-                        <partial name="_VistaCrearVolver" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>*@
+﻿
 @model Lagazzi.Models.TipoVehiculo
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+
 }
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="~/css/registro_tipo.css">
 <div>
     <div class="container">
@@ -54,7 +31,7 @@
                     <div class="col">
                         <a asp-action="Index" class="btn btn-warning form-control">Volver a Lista</a>
                     </div>
-                    </div>
+                </div>
             </form>
         </div>
     </div>
