@@ -14,6 +14,16 @@ namespace lagazzinuevo2._0.Areas.Admin.Controllers
     public class UsuariosController : Controller
     {
 
+        public IActionResult prueba()
+        {
+            var claimsIdentity = (ClaimsIdentity)this.User.Identity;
+            var usuarioActual = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            return View(_contenedorTrabajo.Usuario.GetAll(u => u.Id != usuarioActual.Value));
+
+        }
+
+
         private readonly IContenedorTrabajo _contenedorTrabajo;
 
         public UsuariosController(IContenedorTrabajo contenedorTrabajo)

@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lagazzinuevo2.0", "lagazzin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lagazzi.AccesoDatos", "Lagazzi.AccesoDatos\Lagazzi.AccesoDatos.csproj", "{79699D63-3243-482F-B547-181F75E836E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lagazzi.Models", "Lagazzi.Models\Lagazzi.Models.csproj", "{796ABAD0-BF0B-4A4D-B146-A29F4C6B8558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lagazzi.Models", "Lagazzi.Models\Lagazzi.Models.csproj", "{796ABAD0-BF0B-4A4D-B146-A29F4C6B8558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lagazzi.Utilidades", "Lagazzi.Utilidades\Lagazzi.Utilidades.csproj", "{CD9DAFB6-410B-44B8-9965-02DED9805E83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lagazzi.Utilidades", "Lagazzi.Utilidades\Lagazzi.Utilidades.csproj", "{CD9DAFB6-410B-44B8-9965-02DED9805E83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -16,6 +16,7 @@ using Lagazzi.AccesoDatos.Data.Repository;
 using Lagazzi.AccesoDatos.Data;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Lagazzi.Utilidades;
+using Microsoft.AspNetCore.Http;
 
 namespace lagazzinuevo2._0
 {
@@ -60,6 +61,9 @@ namespace lagazzinuevo2._0
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+    
+
+            app.UseStatusCodePagesWithReExecute("/Admin/Home/Error", "?statusCode={0}");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
